@@ -1,6 +1,29 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+
+function Lead() {
+  return (
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center">
+        <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+          Aria is a competitive gaming guild founded in 2016.
+        </h2>
+        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          We pride ourselves in our ability to bring people from different
+          backgrounds together to enjoy games and have fun.
+        </p>
+        <p class="mt-5 max-w-3xl text-2xl text-indigo-500 lg:mx-auto">
+          We are more than just a guild. We are a community of people full of
+          love and passion for the games we play and the people we play it with.
+          Our strength comes from a shared belief that games are supposed to be
+          fun. We believe that organized play coupled with community support is
+          the key to enjoying games that may even seem impossible to love.
+        </p>
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -12,15 +35,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
+        <Lead />
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
@@ -58,12 +73,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }

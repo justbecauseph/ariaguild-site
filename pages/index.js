@@ -13,9 +13,10 @@ export default function Home() {
     <div>
       <Head>
         <title>Aria Guild</title>
+        <meta name="title" content="Aria Guild" />
         <meta
           name="description"
-          content="Aria is a competitive gaming guild founded in 2016 by passionate gamers. We pride ourselves in our ability to bring people from different backgrounds together to enjoy games and have fun."
+          content="Aria is a competitive gaming guild founded in 2016. All is fair in love and war."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
